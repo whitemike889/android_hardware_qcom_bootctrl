@@ -15,6 +15,7 @@ LOCAL_CFLAGS += -Wall -Werror
 LOCAL_SHARED_LIBRARIES += liblog libgptutils libcutils
 LOCAL_HEADER_LIBRARIES := libhardware_headers libsystem_headers
 LOCAL_SRC_FILES := boot_control.cpp
+LOCAL_MODULE_PATH_64 := $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := bootctrl.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_OWNER := qcom
@@ -28,6 +29,8 @@ LOCAL_CFLAGS += -Wall -Werror
 LOCAL_SHARED_LIBRARIES += liblog libgptutils libcutils
 LOCAL_HEADER_LIBRARIES := libhardware_headers libsystem_headers
 LOCAL_SRC_FILES := boot_control.cpp
+LOCAL_MODULE_PATH_64 := $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64
+LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := bootctrl.$(TARGET_BOARD_PLATFORM)
 include $(BUILD_STATIC_LIBRARY)
 
